@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="match_parent"
+    tools:context=".EnterWeightActivity">
+
+    <ImageView
+        android:id="@+id/iv_left2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/sign_image"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tv_register2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your current weight?"
+        android:textSize="18sp"
+        android:textColor="#3E423A"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_left2" />
+
+    <EditText
+        android:id="@+id/et_fulName"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        android:padding="27dp"
+        android:background="@drawable/bg_shadow"
+        android:textColorHint="#6F6D6D"
+        android:inputType="number"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#3E423A"
+        android:imeOptions="actionNext"
+        app:layout_constraintTop_toBottomOf="@id/tv_register2"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kg"
+        android:textSize="22sp"
+        android:textColor="#3E423A"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_fulName"
+        app:layout_constraintBottom_toBottomOf="@id/et_fulName"
+        app:layout_constraintStart_toEndOf="@id/et_fulName"
+         />
+
+
+    <TextView
+        android:id="@+id/tv_register3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your current height?"
+        android:textSize="18sp"
+        android:textColor="#3E423A"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_fulName" />
+
+    <EditText
+        android:id="@+id/ed_height"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        android:padding="27dp"
+        android:background="@drawable/bg_shadow"
+        android:textColorHint="#6F6D6D"
+        android:inputType="number"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#3E423A"
+        android:imeOptions="actionNext"
+        app:layout_constraintTop_toBottomOf="@id/tv_register3"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sm"
+        android:textSize="22sp"
+        android:textColor="#3E423A"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ed_height"
+        app:layout_constraintBottom_toBottomOf="@id/ed_height"
+        app:layout_constraintStart_toEndOf="@id/ed_height"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="16dp"
+        android:paddingEnd="100dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/button_bg"
+        android:drawableEnd="@drawable/button_svg"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_height"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
